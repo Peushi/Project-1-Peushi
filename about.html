@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Simple Front Site project - about page">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn more about this simple responsive website project" />
+    <meta name="keywords" content="about, web development, responsive, HTML, CSS" />
+    <title>Simple Site | About</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./imgs/favicon/favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <header class="site-header">
-        <h1>About This Project</h1>
-        <nav class="navbar">
+    <!-- Header -->
+    <header class="header">
+        <nav class="container">
+            <button class="header__toggle-btn">
+                <span></span><span></span><span></span>
+            </button>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
+                <li><a class="active" href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="site-main">
-        <section class="intro">
-            <h2>Who We Are</h2>
-            <p>This site is designed to practice responsive front-end development.</p>
+    <!-- Main -->
+    <main>
+        <!-- About Section -->
+        <section class="about-intro">
+            <h1>About This Project</h1>
+            <p>
+                This website was created as part of a front-end development project. 
+                It demonstrates responsive design, semantic HTML structure, and modern CSS techniques.
+            </p>
         </section>
-        <section class="details">
-            <h2>Technologies Used</h2>
+
+        <!-- Our Goals Section -->
+        <section class="about-goals">
+            <h2>Our Goals</h2>
             <ul>
-                <li>Semantic HTML</li>
-                <li>CSS with Flexbox</li>
-                <li>Media Queries for responsiveness</li>
+                <li>Provide a clear, responsive, and user-friendly layout.</li>
+                <li>Practice semantic HTML and reusable CSS.</li>
+                <li>Demonstrate a clean structure for multi-page sites.</li>
             </ul>
         </section>
+
+        <!-- Team Section -->
+        <section class="about-team">
+            <h2>Meet the Team</h2>
+            <p>
+                This project is currently maintained by a small team of passionate learners who enjoy coding and exploring new web technologies.
+            </p>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 WebDev Productions</p>
+        <div class="social">
+            <a target="_blank" href="https://www.facebook.com/">Facebook</a> | 
+            <a target="_blank" href="https://www.instagram.com/">Instagram</a> | 
+            <a target="_blank" href="https://twitter.com/">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
 </body>
 </html>
